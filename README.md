@@ -1,10 +1,10 @@
 # halide-app-private
 This repository contains non-expert [Halide](https://halide-lang.org/) implementations of some commonly seen image processing applications using Halide auto-schedulers described in [this paper](https://dl.acm.org/doi/10.1145/2897824.2925952) for GPU backend.
 
-Results on RTX2080, Ubuntu 18.04, CUDA 11.1, Clang/LLVM 10.0, Halide master branch @v10.0.0
+Some experiments on RTX2080, Ubuntu 18.04, CUDA 11.1, Clang/LLVM 10.0, Halide master branch @v10.0.0
 
 | app                 | time (ms)   |
-| ------------------- | -----------:|
+|:------------------- | -----------:|
 | Bilateral           |  39.6088    |
 | Gaussian            |   0.2277    |
 | HarrisCorner        |   39.7723   |
