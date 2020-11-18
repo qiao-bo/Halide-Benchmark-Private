@@ -46,7 +46,7 @@ public:
 
     // Auto schedule the pipeline
     for (int n = 0; n < PARN; n++) {
-      output[n].estimate(x, 0, WIDTH).estimate(y, 0, HEIGHT);
+      output[n].set_estimate(x, 0, WIDTH).set_estimate(y, 0, HEIGHT);
     }
     Pipeline p({output[0], output[1], output[2], output[3], output[4], output[5],
                 output[6], output[7], output[8], output[9]});

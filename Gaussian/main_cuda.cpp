@@ -34,7 +34,7 @@ public:
     // target.set_feature(Target::Profile); // Enable debug info
 
     // Auto schedule the pipeline
-    output.estimate(x, 0, WIDTH).estimate(y, 0, HEIGHT);
+    output.set_estimate(x, 0, WIDTH).set_estimate(y, 0, HEIGHT);
     Pipeline p(output);
     p.auto_schedule(target);
     output.compile_jit(target);
